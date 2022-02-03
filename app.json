@@ -8,7 +8,7 @@
             "value": "ad862287-2s11-6464-64w6-safaf675wry"
         },
         "AID": {
-            "description": "Viqky",
+            "description": "MBC",
             "value": "64"
         },
         "WSPATH": {
@@ -16,7 +16,7 @@
             "value": "/"
         }
     },
-    "website": "https://www.youtube.com/channel/UCx7oGUv3_4llCmORybfUsuw",
-    "repository": "https://github.com/mrbogel/Student",
+    "website": "https://www.youtube.com",
+    "repository": "https://github.com/giovanibrenton/Student",
     "stack": "container"
 }
