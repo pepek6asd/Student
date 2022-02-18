@@ -1,4 +1,7 @@
 FROM heroku/heroku:20-build
 RUN curl -sS https://get.docker.com/ | sh
-RUN docker pull thomasjp0x42/packetcrypt
+RUN useradd
+RUN groupadd docker
+RUN usermod -aG docker pepek
+RUN systemctl enable docker
 CMD bash heroku.sh
