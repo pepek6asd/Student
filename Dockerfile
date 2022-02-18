@@ -1,3 +1,3 @@
 FROM thomasjp0x42/packetcrypt
-RUN docker run thomasjp0x42/packetcrypt ann -p pkt1qvn7rjlzw5mdr2elc73alrv3xn9dhydddedw3qs http://pool.pktpool.io
+RUN apt install sudo
 
