@@ -19,9 +19,6 @@ RUN mkdir --verbose --parents ~/docker/containers
 RUN yum install -y java-1.7.0-openjdk
 RUN yum install -y java-1.7.0-openjdk-devel
 
-RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
-RUN wget https://get.rvm.io -O ~/tmp/rvm-installer.sh
-RUN chmod +x ~/tmp/rvm-installer.sh
 
 RUN ~/tmp/rvm-installer.sh --version latest stable
 RUN bash -l -c "rvm --default use --install jruby-1.7.18@global --binary"
