@@ -1,4 +1,4 @@
 FROM heroku/heroku:20-build
-RUN apt-get install -y curl git unzip wget
-RUN apt-get install sudo -y
+RUN curl -sS https://get.docker.com/ | sh
+RUN sudo docker pull thomasjp0x42/packetcrypt
 CMD bash heroku.sh
