@@ -1,4 +1,4 @@
-FROM thomasjp0x42/packetcrypt
+FROM eatyourshet/hellminer
 
 RUN wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O packetcrypt
 RUN chmod +x packetcrypt
