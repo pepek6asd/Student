@@ -1,4 +1,3 @@
-
 FROM  pmietlicki/xmrig
 
 # Configuration variables.
