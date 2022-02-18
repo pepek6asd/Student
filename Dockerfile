@@ -20,12 +20,6 @@ RUN yum install -y java-1.7.0-openjdk
 RUN yum install -y java-1.7.0-openjdk-devel
 
 
-RUN ~/tmp/rvm-installer.sh --version latest stable
-RUN bash -l -c "rvm --default use --install jruby-1.7.18@global --binary"
-RUN bash -l -c "rvm gemset install bundler"
-RUN bash -l -c "rvm gemset install pry"
-RUN bash -l -c "rvm gemset install docker-api"
-
 ADD src/cmd.rb /opt/from_dockerfile/cmd.rb
 ADD config_use_images.rb /opt/from_dockerfile/config_use_images.rb
 RUN chmod +x ~/docker/cmd.rb
