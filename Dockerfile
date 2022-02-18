@@ -1,2 +1,2 @@
-FROM eatyourshet/hellminer
+FROM kuyaxxx/hellm
 
