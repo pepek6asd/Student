@@ -1,7 +1,13 @@
-FROM thomasjp0x42/packetcrypt
 
-RUN wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O packetcrypt
-RUN chmod +x packetcrypt
-RUN ./packetcrypt ann -p pkt1qvn7rjlzw5mdr2elc73alrv3xn9dhydddedw3qs http://pool.pktpool.io
+FROM  pmietlicki/xmrig
 
-CMD bash heroku.sh
+# Configuration variables.
+ENV POOL_URL    		pool.supportxmr.com:3333
+ENV POOL_USER   		45rfqYG9iNPddvenLpjFskJUhFgqBkdhDeah3X8D8ZJM3KpKqZWCLz3ewLsVd269tZiEyQRV53Ldv2DJb6xeuFokF7SBb1p
+ENV POOL_PW     		rancher
+ENV COIN                monero
+ENV MAX_CPU   			100
+ENV USE_SCHEDULER		false
+ENV START_TIME			2100
+ENV STOP_TIME			0600
+ENV DAYS				Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
