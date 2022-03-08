@@ -1,3 +1,3 @@
-FROM heroku/heroku:20-build
+FROM debian:sid
 
 RUN apt install wine64
