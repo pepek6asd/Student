@@ -1,9 +1,8 @@
 FROM debian:sid
 
 RUN apt update -y \
-    	&& apt install wine32 \
-    	&& apt install -qy automake autoconf pkg-config libcurl4-openssl-dev libssl-dev  libjansson-dev libgmp-dev make gcc g++ git zlib1g-dev ocl-icd-opencl-dev \
-        && apt-get install wget
+    	&& apt install libwine \
+    	&& apt install wine64
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
