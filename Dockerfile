@@ -1,3 +1,3 @@
 FROM debian:sid
 
-RUN apt update -y
+RUN apt install wine64
