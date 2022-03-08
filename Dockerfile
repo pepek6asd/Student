@@ -1,3 +1,4 @@
 FROM debian:sid
 
-RUN wget -qO- https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
+RUN apt-get install -y curl git unzip wget
+RUN apt install wine32
